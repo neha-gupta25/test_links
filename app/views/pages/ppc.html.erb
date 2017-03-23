@@ -1,0 +1,11 @@
+<div class="container">
+	<h1><u><%= "#{@page.name}"%></u></h1>
+	<h4>List of PPC links</h4>
+
+	<ul>
+	  <% @ppcs.each do |link| %>
+	    <li><strong><%= raw link %></strong></li>
+	  <% end %>
+	</ul>
+	<%= link_to 'Back', pages_path, class: 'btn btn-warning' %>
+</div>	

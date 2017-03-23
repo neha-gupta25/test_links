@@ -1,0 +1,7 @@
+<%= simple_form_for(@page) do |f| %>
+  <h4>Please upload your HTML Page</h4>
+  <%= f.input :id, as: :hidden %>
+  <%= f.input :name, as: :string,placeholder: "page name" %>
+  <%= f.input :html, as: :file, label: false, input_html: {'accept': 'text/html'} %>
+  <%= f.submit 'Save', class: 'blue-btn' %>
+<%- end %>
